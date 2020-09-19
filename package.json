@@ -1,0 +1,60 @@
+{
+  "name": "@tegebu/mejillones",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tegebu/mejillones.git"
+  },
+  "license": "MIT",
+  "author": "tegebu <info@tegebu.com>",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean && tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "commit": "git cz",
+    "dev": "ts-node src/transfer.ts",
+    "format": "eslint --fix 'src/**/*.{ts,tsx}'",
+    "release": "semantic-release",
+    "start": "node dist/transfer.js",
+    "update": "yarn update:upgrade && yarn update:install",
+    "update:install": "yarn install && yarn upgrade",
+    "update:upgrade": "ncu --upgrade"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@jamashita/eslint-config": "1.1.5",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/github": "7.1.1",
+    "@semantic-release/release-notes-generator": "9.0.1",
+    "@types/jest": "^26.0.14",
+    "@types/node": "14.11.1",
+    "@types/sinon": "^9.0.5",
+    "@typescript-eslint/eslint-plugin": "4.1.1",
+    "@typescript-eslint/parser": "4.1.1",
+    "@typescript-eslint/typescript-estree": "4.1.1",
+    "eslint": "7.9.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "24.0.1",
+    "git-cz": "4.7.1",
+    "husky": "4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "10.4.0",
+    "npm-check-updates": "9.0.1",
+    "rimraf": "3.0.2",
+    "semantic-release": "17.1.2",
+    "sinon": "^9.0.3",
+    "sort-package-json": "1.46.0",
+    "ts-jest": "26.3.0",
+    "ts-node": "9.0.0",
+    "typescript": "4.0.3"
+  },
+  "engines": {
+    "node": ">= 14.5.0",
+    "npm": "npm is not supported"
+  },
+  "engineStrict": true
+}
