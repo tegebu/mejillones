@@ -1,21 +1,22 @@
 {
   "name": "@tegebu/mejillones",
   "version": "1.0.0",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git@github.com:tegebu/mejillones.git"
   },
   "license": "MIT",
   "author": "tegebu <info@tegebu.com>",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "yarn clean && tsc -p tsconfig.json",
     "clean": "rimraf dist",
     "commit": "git cz",
-    "dev": "ts-node src/transfer.ts",
+    "dev": "ts-node src/index.ts",
     "format": "eslint --fix 'src/**/*.{ts,tsx}'",
-    "release": "semantic-release",
-    "start": "node dist/transfer.js",
+    "start": "node dist/index.js",
+    "test": "jest test --detectOpenHandles --coverage",
     "update": "yarn update:upgrade && yarn update:install",
     "update:install": "yarn install && yarn upgrade",
     "update:upgrade": "ncu --upgrade"
