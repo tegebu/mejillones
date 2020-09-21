@@ -4,7 +4,7 @@ almost template
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-## Requirement
+## Requisite
 
 ```
 > node -v
@@ -25,7 +25,7 @@ yarn install
 
 ## Conventional commit
 
-all commits have to severely obey [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) in order to make a correct commit
+all commits have to severely obey [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) in order to make a correct commit
 
 ```
 git cz
