@@ -1,11 +1,8 @@
-import { subtract } from '../index';
-
+// eslint-disable-next-line import/unambiguous
 describe('index', () => {
   it('subtract', () => {
-    expect.assertions(3);
+    expect.assertions(1);
 
-    expect(subtract(5, 2)).toBe(3);
-    expect(subtract(2, 2)).toBe(0);
-    expect(subtract(-4, 2)).toBe(-6);
+    expect(true).toBeTruthy();
   });
 });
