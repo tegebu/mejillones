@@ -13,10 +13,10 @@
     "build": "yarn clean && tsc -p tsconfig.json",
     "clean": "rimraf dist && rimraf coverage",
     "commit": "git cz",
-    "dev": "ts-node src/index.ts",
+    "dev": "NODE_ENV=development && ts-node src/index.ts",
     "format": "eslint --fix 'src/**/*.{ts,tsx}'",
     "start": "node dist/index.js",
-    "test": "jest test --detectOpenHandles --coverage",
+    "test": "jest test --coverage",
     "update": "yarn update:upgrade && yarn update:install",
     "update:install": "yarn install && yarn upgrade",
     "update:upgrade": "ncu --upgrade"
@@ -25,7 +25,8 @@
     "class-validator": "0.13.1",
     "config": "3.3.3",
     "inversify": "5.0.5",
-    "notion-api-js": "2.3.4",
+    "notion-client": "3.2.6",
+    "notion-types": "3.1.1",
     "reflect-metadata": "0.1.13",
     "tslog": "3.0.5"
   },
