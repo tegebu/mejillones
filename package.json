@@ -22,8 +22,12 @@
     "update:upgrade": "ncu --upgrade"
   },
   "dependencies": {
+    "class-validator": "0.13.1",
     "config": "3.3.3",
-    "notion-api-js": "2.3.4"
+    "inversify": "5.0.5",
+    "notion-api-js": "2.3.4",
+    "reflect-metadata": "0.1.13",
+    "tslog": "3.0.5"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
